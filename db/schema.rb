@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2021_07_31_184100) do
 
   create_table "rounds", force: :cascade do |t|
     t.integer "number"
-    t.integer "dispute_id", null: false
+    t.integer "dispute_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["dispute_id"], name: "index_rounds_on_dispute_id"
